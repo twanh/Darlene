@@ -50,7 +50,7 @@ class Bot(object):
             :param json_response: A python dictionary which contains the converted json string given by api.ai
             :return: A string with the suggested action from api.ai
         """
-        # print json_response
+
         try:
             return str(json_response['result']['action'])
         except KeyError:
