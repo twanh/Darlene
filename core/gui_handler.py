@@ -21,10 +21,6 @@ class Handler(object):
 
         self.chatBoxCursor = QtGui.QTextCursor(self.MainGUI.chatBox.document())
 
-    def run(self):
-        self.MainWindow.show()
-        sys.exit(self.app.exec_())
-
     def user_inp(self):
         self.inp = self.MainGUI.messageBox.text()
         self.MainGUI.messageBox.clear()

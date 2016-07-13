@@ -1,5 +1,5 @@
 from core import actions, bot, storage, terminal, gui_handler
-import time
+import time, sys
 
 
 def main():
@@ -7,7 +7,8 @@ def main():
     STORAGE = storage.Storage()
     ACTION = actions.Actions()
     GUI = gui_handler.Handler()
-    GUI.run()
+
+    GUI.MainWindow.show()
     chatting = True
     if STORAGE.check_saved():
         Darlene = STORAGE.load()
@@ -63,6 +64,7 @@ def main():
             if inp.lower() == 'y' or inp.lower() == 'yes' or inp.lower() == 'yeah':
                 TERM.print_bot('Well bye then...')
                 exit(0)
+    sys.exit(GUI.app.exec_())
 
 if __name__ == '__main__':
     main()
