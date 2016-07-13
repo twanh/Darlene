@@ -5,4 +5,9 @@
     - Gmail/Email integration
     - Better google search
     - Add all/more weather features
-4. Add a GUI (in new branch, GUI, GUI-dev)
+4. Add a GUI
+    - new branch, GUI, GUI-dev
+    - PyQt chat gui
+    - Different themes
+
+
