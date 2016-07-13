@@ -37,7 +37,7 @@ class MainWindow(object):
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.chatBox = QtGui.QTextEdit(self.centralwidget)
         self.chatBox.setGeometry(QtCore.QRect(0, 0, 331, 401))
-        self.chatBox.setStyleSheet(_fromUtf8("border: none;"))
+        self.chatBox.setStyleSheet(_fromUtf8("border: none;\ncolor: #C9C9C9;"))
         self.chatBox.setReadOnly(True)
         self.chatBox.setObjectName(_fromUtf8("chatBox"))
         self.messageBox = QtGui.QLineEdit(self.centralwidget)
