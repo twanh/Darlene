@@ -10,8 +10,8 @@ class Handler(object):
 
         self.USER_NAME = 'Unknown'
 
-        self.user_prefix = '<h3 style="color:#3E6BC6;">[' + self.USER_NAME + ']> </h3>'
-        self.bot_prefix = '<h3 style="color:#4EC909;">[Darlene]> </h3>'
+        self.user_prefix = '<h4 style="color:#3E6BC6;">[' + self.USER_NAME + ']> </h4>'
+        self.bot_prefix = '<h4 style="color:#4EC909;">[Darlene]> </h4>'
         self.app = QtGui.QApplication(sys.argv)
         self.MainWindow = QtGui.QMainWindow()
         self.MainGUI = main_window.MainWindow()
