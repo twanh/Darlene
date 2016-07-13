@@ -27,7 +27,7 @@ except AttributeError:
 
 class MainWindow(object):
 
-    def setupMainWindow(self, MainWindow):
+    def setup(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(331, 438)
         MainWindow.setMinimumSize(QtCore.QSize(331, 438))
