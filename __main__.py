@@ -7,6 +7,7 @@ def main():
     STORAGE = storage.Storage()
     ACTION = actions.Actions()
     GUI = gui_handler.Handler()
+    GUI.run()
     chatting = True
     if STORAGE.check_saved():
         Darlene = STORAGE.load()
