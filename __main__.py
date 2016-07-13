@@ -11,6 +11,8 @@ def main():
     chatting = True
     if STORAGE.check_saved():
         Darlene = STORAGE.load()
+        GUI.print_bot('Welcome back %s!' % Darlene.BOSS_NAME)
+        GUI.USER_NAME = Darlene.BOSS_NAME
     else:
         TERM.header()
         Darlene = bot.Bot()
