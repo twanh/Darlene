@@ -1,4 +1,4 @@
-from core import actions, bot, storage, terminal
+from core import actions, bot, storage, terminal, gui_handler
 import time
 
 
@@ -6,10 +6,10 @@ def main():
     TERM = terminal.Terminal()
     STORAGE = storage.Storage()
     ACTION = actions.Actions()
+    GUI = gui_handler.Handler()
     chatting = True
     if STORAGE.check_saved():
         Darlene = STORAGE.load()
-        TERM.header(welcome_back=True)
     else:
         TERM.header()
         Darlene = bot.Bot()
