@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>331</width>
+    <height>438</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>331</width>
+    <height>438</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Darlene</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #444;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="chatBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>331</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="messageBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>410</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+background-color: rgb(99, 99, 99);
+color: 'white';</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendBtn">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>410</y>
+      <width>92</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(99, 99, 99);
+color: 'white';</string>
+    </property>
+    <property name="text">
+     <string>Send</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
