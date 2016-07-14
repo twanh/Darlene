@@ -1,13 +1,14 @@
 from gui import main_window
 from PyQt4 import QtCore, QtGui
-import sys
+import sys, time
 
 
 class Handler(object):
     def __init__(self):
 
         self.inp = ''
-
+        self.check_inp = ''
+        self.wait_inp = False
         self.USER_NAME = 'Unknown'
 
         self.user_prefix = '<h4 style="color:#3E6BC6;">[' + self.USER_NAME + ']> </h4>'
@@ -24,6 +25,13 @@ class Handler(object):
     def user_inp(self):
         self.inp = self.MainGUI.messageBox.text()
         self.MainGUI.messageBox.clear()
+        self.print_user(self.inp)
+        if self.wait_inp:
+            self.get_inp()
+
+    def get_inp(self):
+        self.wait_inp = True
+        return self.inp
 
     def print_user(self, text):
         self.chatBoxCursor.insertHtml(self.user_prefix)
